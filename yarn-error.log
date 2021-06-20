@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /vscode/vscode-server/bin/x64/cfa2e218100323074ac1948c885448fdf4de2a7f/bin:/usr/local/share/npm-global/bin:/usr/local/share/nvm/current/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/node/.local/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /workspaces/gpu-alert/package.json: Unexpected string in JSON at position 91
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "gpu-alert",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  
+    "scripts": {
+      "compile": "tsc",
+      "dev": "yarn run compile && node dist/app.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

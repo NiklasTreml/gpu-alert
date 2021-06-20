@@ -1,0 +1,5 @@
+node_modules
+dist
+.env
+joinedUsers.json
+mostRecent.json

@@ -1,0 +1,5 @@
+parts - Shows a list of currrently watched parts
+join - Join the price broadcast
+leave - Leave the broadcast 
+recent - Get most recent tweet for passed hashtag
+recents - Get most recent tweets for all watched hashtags
