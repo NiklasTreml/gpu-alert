@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "compile": "tsc",
-    "start": "yarn run compile && node dist/app.js",
+    "start.compile": "yarn run compile && node dist/app.js",
+    "start": "node dist/app.js",
     "dev": "tsc-watch --compiler /usr/local/share/npm-global/bin/tsc --onSuccess 'node dist/app.js'"
   },
   "dependencies": {

@@ -1,0 +1,10 @@
+.devcontainer
+.git
+Docker
+node_modules
+src
+.gitignore
+joinedUsers.json
+mostRecent.json
+tsconfig.json
+yarn-error.log
