@@ -23,7 +23,10 @@ export function AddUser(id: number) {
 
 	joinedUsers.users.push(id);
 
-	fs.writeFileSync(config.get('usersDbFile'), JSON.stringify(joinedUsers));
+	fs.writeFileSync(
+		config.get('usersDbFile'),
+		JSON.stringify(joinedUsers, null, 4)
+	);
 }
 
 export function RemoveUser(id: number) {
@@ -38,7 +41,10 @@ export function RemoveUser(id: number) {
 		x != id;
 	});
 
-	fs.writeFileSync(config.get('usersDbFile'), JSON.stringify(joinedUsers));
+	fs.writeFileSync(
+		config.get('usersDbFile'),
+		JSON.stringify(joinedUsers, null, 4)
+	);
 }
 
 export function GetUsers() {
