@@ -24,7 +24,7 @@ export async function getMostRecentTweet(hashtag: string): Promise<Object> {
 	const url = 'https://api.twitter.com/1.1/search/tweets.json';
 	let res = await axios.get(url, {
 		headers: { Authorization: 'Bearer ' + process.env.TWITTER_BEARER },
-		params: { q: hashtag, result_type: 'recent' },
+		params: { q: hashtag, result_type: 'recent', tweet_mode: 'extended' },
 	});
 
 	return res.data.statuses[0];

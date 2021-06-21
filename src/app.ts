@@ -94,7 +94,7 @@ setInterval(() => {
 						ht.replace('#pa_', '') +
 						' ---\n\n\n' +
 						//@ts-ignore
-						mr.text
+						mr.full_text
 				);
 			}
 		});
