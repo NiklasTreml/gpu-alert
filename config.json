@@ -1,8 +1,0 @@
-{
-	"usersDbFile": "./joinedUsers.json",
-	"followedHashtags": [
-		"#pa_rtx3070",
-		"#pa_rtx3070ti"
-	],
-	"mostRecentDbFile": "./mostRecent.json"
-}

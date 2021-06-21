@@ -2,7 +2,7 @@ import fs from 'fs';
 
 function getConfig() {
 	// @ts-ignore
-	let config = JSON.parse(fs.readFileSync('./config.json'));
+	let config = JSON.parse(fs.readFileSync('./config/config.json'));
 	return config;
 }
 
