@@ -3,6 +3,7 @@ services:
     gpu-alert:
         build:
             dockerfile: Dockerfile
+            context: ./
         volumes:
             - './data:/app/data'
             - './config:/app/config'
