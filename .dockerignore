@@ -3,8 +3,9 @@
 Docker
 node_modules
 .gitignore
-joinedUsers.json
-mostRecent.json
+data/joinedUsers.json
+data/mostRecent.json
 yarn-error.log
 Dockerfile
 .dockerignore
+docker-compose.yml

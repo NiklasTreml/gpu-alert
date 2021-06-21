@@ -1,5 +1,6 @@
 node_modules
 dist
 .env
-joinedUsers.json
-mostRecent.json
+./data/mostRecent.json
+./data/joinedUsers.json
+data/**/*
