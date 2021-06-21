@@ -71,7 +71,7 @@ bot.launch().then(() => {
 });
 
 function broadcast(msg: string) {
-	console.log('\t=>Broadcasting');
+	console.log('\t=> Broadcasting');
 	for (let u of users.GetUsers().users) {
 		bot.telegram.sendMessage(u, msg);
 	}
