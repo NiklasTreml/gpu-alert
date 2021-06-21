@@ -15,9 +15,13 @@ bot.command('join', async (ctx) => {
 	//add user to notification list
 
 	let sender_id = ctx.message.from.id;
-	users.AddUser(sender_id);
+	let exists = users.AddUser(sender_id);
 
-	ctx.reply('You were added to the broadcast');
+	if (exists) {
+		ctx.reply('You already joined the broadcast');
+	} else {
+		ctx.reply('You were added to the broadcast');
+	}
 });
 
 bot.command('leave', (ctx) => {

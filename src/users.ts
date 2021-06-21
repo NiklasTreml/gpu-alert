@@ -11,14 +11,14 @@ export function initUsersIfNotExists() {
 	}
 }
 
-export function AddUser(id: number) {
+export function AddUser(id: number): boolean {
 	initUsersIfNotExists();
 	console.log(`Adding user ${id} to list`);
 	let joinedUsers = JSON.parse(
 		fs.readFileSync(config.get('usersDbFile')).toString()
 	);
 	if (joinedUsers.users.includes(id)) {
-		return;
+		return true;
 	}
 
 	joinedUsers.users.push(id);
@@ -27,6 +27,7 @@ export function AddUser(id: number) {
 		config.get('usersDbFile'),
 		JSON.stringify(joinedUsers, null, 4)
 	);
+	return false;
 }
 
 export function RemoveUser(id: number) {
